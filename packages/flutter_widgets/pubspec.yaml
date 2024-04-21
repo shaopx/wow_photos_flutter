@@ -1,0 +1,32 @@
+name: flutter_widgets
+description: A component library that implements the Sirius design system.
+version: 0.0.1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  diacritic: ^0.1.5
+  dotted_border: ^2.0.0+2
+  easy_debounce: ^2.0.3
+  flutter:
+    sdk: flutter
+  flutter_hooks: ^0.20.3
+  flutter_picker: ^2.1.0
+  flutter_svg: ^2.0.4
+  percent_indicator: ^4.2.3
+  shimmer: ^3.0.0
+  storybook_flutter: ^0.14.0
+  styled_text: ^8.1.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^5.1.0
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/images/icons/
+  uses-material-design: true

@@ -5,8 +5,10 @@ A Photo Flutter project.
 
 ## Getting Started
 
-run the following command in this project path: 
+### run the following command in this project path: 
+
 flutter pub get
+
 dart run build_runner build
 
 

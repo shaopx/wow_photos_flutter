@@ -22,11 +22,12 @@ class $AssetsImagesGen {
 class Assets {
   Assets._();
 
+  static const AssetGenImage demo = AssetGenImage('assets/demo.gif');
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const String xiuren = 'assets/xiuren.json';
 
   /// List of all assets
-  static List<String> get values => [xiuren];
+  static List<dynamic> get values => [demo, xiuren];
 }
 
 class AssetGenImage {

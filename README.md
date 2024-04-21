@@ -1,5 +1,5 @@
 # wow_photos_flutter
-screen shot (https://github.com/shaopx/wow_photos_flutter/blob/master/assets/demo.gif)
+![screenshot](https://github.com/shaopx/wow_photos_flutter/blob/master/assets/demo.gif)
 
 A Photo Flutter project.
 

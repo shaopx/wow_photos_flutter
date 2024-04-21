@@ -7,8 +7,10 @@ A Photo Flutter project.
 
 ### run the following command in this project path: 
 
-flutter pub get
+`flutter pub get`
 
-dart run build_runner build
+`dart run build_runner build`   
+
+
 
 

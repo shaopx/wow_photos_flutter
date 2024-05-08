@@ -1,5 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
 part 'blur_hash_controller.g.dart';
 
@@ -44,15 +44,17 @@ class BlurHashController extends _$BlurHashController {
   }
 
   Future<void> _initAsync() async {
-    final prefs = await SharedPreferences.getInstance();
-    final blurHashs =
-        prefs.getStringList(sharedPreferenceTag) ?? defaultBlurhashs;
+    // final prefs = await SharedPreferences.getInstance();
+    // final blurHashs =
+    //     prefs.getStringList(sharedPreferenceTag) ?? defaultBlurhashs;
+    final blurHashs = defaultBlurhashs;
     state = blurHashs;
   }
 
   Future<void> addBlurHash(String blurhash) async {
-    final prefs = await SharedPreferences.getInstance();
-    final blurHashs = prefs.getStringList(sharedPreferenceTag) ?? [];
+    // final prefs = await SharedPreferences.getInstance();
+    // final blurHashs = prefs.getStringList(sharedPreferenceTag) ?? [];
+    final blurHashs = state;
     if (!blurHashs.contains(blurhash)) blurHashs.add(blurhash);
     state = blurHashs;
   }

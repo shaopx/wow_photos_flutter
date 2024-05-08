@@ -1,10 +1,17 @@
 include: package:very_good_analysis/analysis_options.yaml
 
-linter:
+custom_lint:
   rules:
-    always_put_required_named_parameters_first: false
-    avoid_positional_boolean_parameters: false
-    prefer_relative_imports: false
-    public_member_api_docs: false
-    depend_on_referenced_packages: false
-    lines_longer_than_80_chars: false
+    - missing_provider_scope: false
+
+analyzer:
+  exclude:
+    - lib/**.g.dart
+    - lib/**.freezed.dart
+
+  plugins:
+    - custom_lint
+
+  errors:
+    public_member_api_docs: ignore
+    lines_longer_than_80_chars: ignore

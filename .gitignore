@@ -44,3 +44,8 @@ app.*.map.json
 
 # Project exclude paths
 /packages/flutter_widgets/build/
+pubspec_overrides.yaml
+
+*.g.dart
+*.freezed.dart
+*.gen.dart

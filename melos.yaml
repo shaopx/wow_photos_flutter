@@ -1,0 +1,16 @@
+name: wow_photos_flutter
+
+packages:
+  - .
+  - apps/**
+  - packages/*
+
+scripts:
+  generate:
+    description: Build all generated files for Flutter packages in this project.
+    exec: flutter pub run build_runner build --delete-conflicting-outputs
+    packageFilters:
+      dependsOn: build_runner
+      flutter: true
+  analyze:
+    exec: dart analyze .

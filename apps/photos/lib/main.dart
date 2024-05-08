@@ -2,8 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:wow_photos_flutter/controller/album_data_controller.dart';
-import 'package:wow_photos_flutter/widgets/widgets.dart';
+import 'package:photos/controller/album_data_controller.dart';
+import 'package:photos/widgets/widgets.dart';
 
 class CustomCacheManager {
   static const key = 'customCacheKey';

@@ -1,5 +1,5 @@
-import 'package:wow_photos_flutter/model/models.dart';
-import 'package:wow_photos_flutter/utils/utils.dart';
+import 'package:photos/models/models.dart';
+import 'package:photos/utils/utils.dart';
 
 class AlbumsData {
   factory AlbumsData() {

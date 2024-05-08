@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:wow_photos_flutter/controller/album_data_controller.dart';
-import 'package:wow_photos_flutter/model/models.dart';
-import 'package:wow_photos_flutter/utils/utils.dart';
-import 'package:wow_photos_flutter/widgets/widgets.dart';
+import 'package:photos/controller/album_data_controller.dart';
+import 'package:photos/models/models.dart';
+import 'package:photos/utils/utils.dart';
+import 'package:photos/widgets/widgets.dart';
 
 class AlbumGridView extends HookConsumerWidget {
   const AlbumGridView({super.key});

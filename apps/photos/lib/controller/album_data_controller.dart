@@ -1,6 +1,5 @@
+import 'package:photos/models/models.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:wow_photos_flutter/model/album_data.dart';
-import 'package:wow_photos_flutter/model/models.dart';
 
 part 'album_data_controller.g.dart';
 

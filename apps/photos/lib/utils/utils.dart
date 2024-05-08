@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:wow_photos_flutter/model/models.dart';
+import 'package:photos/photos.dart';
 
 Future<List<Album>> getAlbums() async {
   final jsonString = await rootBundle.loadString('assets/xiuren.json');

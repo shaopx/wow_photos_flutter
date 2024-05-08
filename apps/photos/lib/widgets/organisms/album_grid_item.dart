@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:image/image.dart' as img;
-import 'package:wow_photos_flutter/controller/blur_hash_controller.dart';
-import 'package:wow_photos_flutter/controller/providers.dart';
-import 'package:wow_photos_flutter/widgets/widgets.dart';
+import 'package:photos/controller/controller.dart';
+import 'package:photos/providers/providers.dart';
+import 'package:photos/widgets/widgets.dart';
 
 class AlbumGridItem extends HookConsumerWidget {
   const AlbumGridItem({

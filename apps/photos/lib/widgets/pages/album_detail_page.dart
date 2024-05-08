@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:wow_photos_flutter/model/models.dart';
-import 'package:wow_photos_flutter/widgets/widgets.dart';
+import 'package:photos/models/models.dart';
+import 'package:photos/widgets/widgets.dart';
 
 class AlbumDetail extends StatelessWidget {
   const AlbumDetail({super.key, required this.album});

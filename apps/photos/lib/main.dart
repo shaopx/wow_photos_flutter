@@ -44,8 +44,10 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends HookConsumerWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({required this.title, super.key});
+
   final String title;
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(

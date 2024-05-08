@@ -7,17 +7,18 @@ import 'package:flutter_widgets/flutter_widgets.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:image/image.dart' as img;
 import 'package:photos/controller/blur_hash_controller.dart';
-import 'package:photos/providers/providers.dart';
 import 'package:photos/models/models.dart';
+import 'package:photos/providers/providers.dart';
 import 'package:photos/utils/utils.dart';
 import 'package:photos/widgets/widgets.dart';
 
 class AlbumPageviewItem extends HookConsumerWidget {
   const AlbumPageviewItem({
-    super.key,
     required this.album,
     required this.index,
+    super.key,
   });
+
   final Album album;
   final int index;
 
@@ -41,8 +42,10 @@ class AlbumPageviewItem extends HookConsumerWidget {
                 ),
                 canWipe: true,
               )
-            : const Text('No Data',
-                style: TextStyle(fontSize: 8, color: Colors.white)),
+            : const Text(
+                'No Data',
+                style: TextStyle(fontSize: 8, color: Colors.white),
+              ),
         error: (err, stack) => Text(
           'Error$err',
           style: const TextStyle(fontSize: 8, color: Colors.white),

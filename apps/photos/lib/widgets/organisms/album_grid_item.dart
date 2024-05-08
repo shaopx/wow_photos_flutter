@@ -12,11 +12,11 @@ import 'package:photos/widgets/widgets.dart';
 
 class AlbumGridItem extends HookConsumerWidget {
   const AlbumGridItem({
-    super.key,
     required this.imageUrl,
     required this.name,
     required this.date,
     required this.index,
+    super.key,
   });
   final String imageUrl;
   final String name;

@@ -5,8 +5,13 @@ import 'package:flutter_widgets/blurry_glass_pane.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class AlbumGridItemImage extends HookConsumerWidget {
-  const AlbumGridItemImage(
-      {super.key, required this.file, required this.name, required this.date});
+  const AlbumGridItemImage({
+    required this.file,
+    required this.name,
+    required this.date,
+    super.key,
+  });
+
   final File file;
   final String name;
   final String date;
@@ -18,15 +23,13 @@ class AlbumGridItemImage extends HookConsumerWidget {
 
     return Card(
       elevation: 0,
-      margin: const EdgeInsets.all(0.0),
+      margin: EdgeInsets.zero,
       color: Colors.black54,
       child: Stack(
         children: [
           // Load the first image from the images list
           Padding(
-            padding: const EdgeInsets.only(
-              top: 0,
-            ),
+            padding: EdgeInsets.zero,
             child: SizedBox(
               width: cardWidth,
               height: cardHeight,
@@ -48,7 +51,7 @@ class AlbumGridItemImage extends HookConsumerWidget {
                 colors: [
                   Colors.black.withOpacity(0.8),
                   Colors.black.withOpacity(0.5),
-                  Colors.black.withOpacity(0.0)
+                  Colors.black.withOpacity(0),
                 ],
               ),
             ),
@@ -64,12 +67,12 @@ class AlbumGridItemImage extends HookConsumerWidget {
               children: [
                 Text(
                   name,
-                  style: const TextStyle(fontSize: 10.0, color: Colors.white),
+                  style: const TextStyle(fontSize: 10, color: Colors.white),
                 ),
-                const SizedBox(height: 0.0),
+                const SizedBox(height: 0),
                 Text(
                   date,
-                  style: const TextStyle(fontSize: 8.0, color: Colors.white),
+                  style: const TextStyle(fontSize: 8, color: Colors.white),
                 ),
               ],
             ),

@@ -1,4 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+
 // import 'package:shared_preferences/shared_preferences.dart';
 
 part 'blur_hash_controller.g.dart';
@@ -15,16 +16,16 @@ class BlurHashController extends _$BlurHashController {
     'LTPZP-x^I@-;jER-ogt6?wRPj?oM',
     'LPOW4%^*D%D%0J?bt7IVRi4nsAtl',
     r'L9CF^w9F~p4U?E4-xtV]$%-;MwtR',
-    r'LJLD+3=y9HNE0LE2-;M{4nI:xtM}',
-    r'LlFGU_#MIV9hocRksmkCe+XUslaf',
-    r'LQH2~64nD~x[_DIWM{RP_3M_M|sE',
-    r'LkKJ.1j]M{WqDNoINdoJxvW=flof',
-    r'LVJ802odH?-pDN%Mt8Ipe.t6tlIo',
-    r'LIEx|tL#?c9E#Q-pMxtRIAs:M{xu',
+    'LJLD+3=y9HNE0LE2-;M{4nI:xtM}',
+    'LlFGU_#MIV9hocRksmkCe+XUslaf',
+    'LQH2~64nD~x[_DIWM{RP_3M_M|sE',
+    'LkKJ.1j]M{WqDNoINdoJxvW=flof',
+    'LVJ802odH?-pDN%Mt8Ipe.t6tlIo',
+    'LIEx|tL#?c9E#Q-pMxtRIAs:M{xu',
     r'LrIhpwI9t9ay~URjobay$^ogM{WA',
-    r'LOBW[ADN.T-pf*xbW-%NogWUkDRj',
-    r'LTK0{O-:9vR*0MV@M{W;M{M{xat6',
-    r'LOJ7:dIB00-;-%WC%MbF%fo2sVRQ',
+    'LOBW[ADN.T-pf*xbW-%NogWUkDRj',
+    'LTK0{O-:9vR*0MV@M{W;M{M{xat6',
+    'LOJ7:dIB00-;-%WC%MbF%fo2sVRQ',
     'LUQ,H^aextRjt5ayRjxu~qoft8R*',
     'LULqkWIT.TIU?ca#RixutSt8M{V?',
     r'LHO2mUF$-NIUL3Ou$xD*~okrxCs.',
@@ -47,7 +48,7 @@ class BlurHashController extends _$BlurHashController {
     // final prefs = await SharedPreferences.getInstance();
     // final blurHashs =
     //     prefs.getStringList(sharedPreferenceTag) ?? defaultBlurhashs;
-    final blurHashs = defaultBlurhashs;
+    const blurHashs = defaultBlurhashs;
     state = blurHashs;
   }
 

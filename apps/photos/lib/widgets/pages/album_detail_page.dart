@@ -5,7 +5,8 @@ import 'package:photos/models/models.dart';
 import 'package:photos/widgets/widgets.dart';
 
 class AlbumDetail extends StatelessWidget {
-  const AlbumDetail({super.key, required this.album});
+  const AlbumDetail({required this.album, super.key});
+
   final Album album;
 
   @override

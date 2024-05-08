@@ -24,12 +24,13 @@ class MyApp extends StatelessWidget {
                 width: 200,
                 height: 420,
                 child: DecoratedBox(
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.green, width: 1)),
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.green)),
                   child: BlurryGlassPaneWidget(
                     // image: Image.asset("assets/images/test.webp"),
                     image: Image.network(
-                        "https://www.123781.xyz/uploadfile/202404/17/28144654410.webp"),
+                      'https://www.123781.xyz/uploadfile/202404/17/28144654410.webp',
+                    ),
                   ),
                 ),
               ),
@@ -39,12 +40,13 @@ class MyApp extends StatelessWidget {
                 width: 200,
                 height: 420,
                 child: DecoratedBox(
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.green, width: 1)),
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.green)),
                   child: BlurryGlassPaneWidget(
                     // image: Image.asset("assets/images/test.webp"),
                     image: Image.network(
-                        "https://www.123781.xyz/uploadfile/202404/17/DA144654152.webp"),
+                      'https://www.123781.xyz/uploadfile/202404/17/DA144654152.webp',
+                    ),
                   ),
                 ),
               ),

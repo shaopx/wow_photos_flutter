@@ -1,12 +1,15 @@
-import 'package:flutter/material.dart';
 import 'dart:ui';
 
+import 'package:flutter/material.dart';
+
 class FrostedGlassReveal extends StatefulWidget {
+  const FrostedGlassReveal({super.key});
+
   @override
-  _FrostedGlassRevealState createState() => _FrostedGlassRevealState();
+  FrostedGlassRevealState createState() => FrostedGlassRevealState();
 }
 
-class _FrostedGlassRevealState extends State<FrostedGlassReveal> {
+class FrostedGlassRevealState extends State<FrostedGlassReveal> {
   List<Offset> swipePath = [];
 
   @override
@@ -37,9 +40,9 @@ class _FrostedGlassRevealState extends State<FrostedGlassReveal> {
       child: Container(
         height: double.maxFinite,
         width: double.maxFinite,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
-            image: ExactAssetImage("assets/images/test.webp"),
+            image: ExactAssetImage('assets/images/test.webp'),
             fit: BoxFit.cover,
           ),
         ),
@@ -55,7 +58,7 @@ class _FrostedGlassRevealState extends State<FrostedGlassReveal> {
           //     style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
           //   ),
           // ),
-          child: Text('adsfasdfasdf'),
+          child: const Text('adsfasdfasdf'),
           // child: Image.asset(
           //   'assets/images/test.webp',
           //   fit: BoxFit.cover,
@@ -68,16 +71,16 @@ class _FrostedGlassRevealState extends State<FrostedGlassReveal> {
 }
 
 class RevealPainter extends CustomPainter {
-  final List<Offset> swipePath;
-
   RevealPainter({required this.swipePath});
+
+  final List<Offset> swipePath;
 
   @override
   void paint(Canvas canvas, Size size) {
     // Create transparent rectangles corresponding to swipe path
-    for (Offset point in swipePath) {
-      Rect rect = Rect.fromCenter(center: point, width: 50, height: 50);
-      Paint paint = Paint()..color = Colors.transparent;
+    for (final point in swipePath) {
+      final rect = Rect.fromCenter(center: point, width: 50, height: 50);
+      final paint = Paint()..color = Colors.transparent;
       canvas.drawRect(rect, paint);
     }
   }

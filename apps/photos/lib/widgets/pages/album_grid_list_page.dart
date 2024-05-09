@@ -25,7 +25,7 @@ class AlbumGridView extends HookConsumerWidget {
               return GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(
+                    MaterialPageRoute<Widget>(
                       builder: (context) => AlbumDetail(album: images[index]),
                     ),
                   );

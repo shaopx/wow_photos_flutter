@@ -9,14 +9,6 @@ The candidate facing mobile app.
 2. Bootstrap the repository with `melos bs`
 3. Generate the necessary files with `melos run generate`
 
-## Melos
-
-Melos is a CLI tool used to help manage Dart projects with multiple packages.
-
-### Melos scripts
-
-`melos run generate`
-
 ## Entry Points
 
 - apps/flauncher: lib/main.dart

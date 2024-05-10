@@ -28,14 +28,14 @@ class PhotosHomeRoute extends GoRouteData {
 
 @immutable
 class AlbumDetailRoute extends GoRouteData {
-  const AlbumDetailRoute(this.album);
+  const AlbumDetailRoute(this.index);
 
-  final Album album;
+  final int index;
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
     return AlbumDetail(
-      album: album,
+      index: index,
     );
   }
 }

@@ -9,8 +9,8 @@ class AlbumGridView extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final imagesData = ref.watch(albumDataControllerProvider);
-    return imagesData.when(
+    final imageList = ref.watch(albumDataControllerProvider);
+    return imageList.when(
       data: (images) => ColoredBox(
         color: Colors.black,
         child: GridView.builder(
@@ -26,7 +26,7 @@ class AlbumGridView extends HookConsumerWidget {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute<Widget>(
-                      builder: (context) => AlbumDetail(album: images[index]),
+                      builder: (context) => AlbumDetail(index: index),
                     ),
                   );
                 },

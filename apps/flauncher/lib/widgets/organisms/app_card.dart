@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 enum AppEntry {
@@ -36,7 +37,9 @@ class AppCard extends HookConsumerWidget {
 
     VoidCallback withTapCallback(int index) {
       return switch (index) {
-        0 => () {},
+        0 => () {
+            context.go('/photos');
+          },
         1 => () {},
         2 => () {},
         3 => () {},

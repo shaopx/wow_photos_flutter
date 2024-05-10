@@ -8,6 +8,8 @@ dependencies:
   blurhash_dart: ^1.2.1
   build_runner: any
   cached_network_image: ^3.3.0
+  core:
+    path: ../../packages/core
   cupertino_icons: ^1.0.2
   custom_lint: ^0.6.2
   flutter:
@@ -20,6 +22,8 @@ dependencies:
   flutter_widgets:
     path: ../../packages/flutter_widgets
   get: ^4.6.6
+  go_router: ^13.1.0
+  go_router_builder: ^2.3.3
   hooks_riverpod: ^2.4.9
   image: ^4.1.7
   melos: ^3.1.0

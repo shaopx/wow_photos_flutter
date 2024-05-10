@@ -1,0 +1,15 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/**.g.dart
+    - lib/**.freezed.dart
+
+  plugins:
+    - custom_lint
+
+  errors:
+    invalid_annotation_target: ignore
+    public_member_api_docs: ignore
+    lines_longer_than_80_chars: ignore
+    use_setters_to_change_properties: ignore

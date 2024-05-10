@@ -1,16 +1,22 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:photos/models/models.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:photos/controller/controller.dart';
 import 'package:photos/widgets/widgets.dart';
 
-class AlbumDetail extends StatelessWidget {
-  const AlbumDetail({required this.album, super.key});
+class AlbumDetail extends HookConsumerWidget {
+  const AlbumDetail({required this.index, super.key});
 
-  final Album album;
+  final int index;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final imageList = ref.watch(albumDataControllerProvider).value;
+    if (imageList == null) {
+      return Offstage();
+    }
+    final album = imageList[index];
     return Scaffold(
       body: ColoredBox(
         color: Colors.black,

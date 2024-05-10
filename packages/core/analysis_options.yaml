@@ -1,0 +1,10 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    always_put_required_named_parameters_first: false
+    avoid_positional_boolean_parameters: false
+    prefer_relative_imports: false
+    public_member_api_docs: false
+    depend_on_referenced_packages: false
+    lines_longer_than_80_chars: false

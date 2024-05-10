@@ -1,4 +1,4 @@
-# Glints Candidate Mobile App
+# Entertainment Mobile App
 
 The candidate facing mobile app.
 
